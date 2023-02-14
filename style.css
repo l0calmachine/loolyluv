@@ -3,7 +3,47 @@ html,body{
   height:100%;
 }
 
-.img
+.img-area{
+  width: 400px;
+  height: 221px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background-image: url(https://lh3.googleusercontent.com/Q4LUWPuWpBbeH5JIEi3y9kAOP64j7esH4Iv7h0ThlNrIkGxvQA9DlyjtlqRs2rS4pS92d4UvlmxGoaQagkIUZet5bvoBr-C4zqmqti6fO6czo70pYyvrEGMi0lt9u16PS4exYi9Tw9g=w1920-h1080);
+}
+
+.img-area:before,
+.img-area:after{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+.img-area:after{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+  background: pink;
+  transform: translateY(-100%);
+  content: attr(data-text);
+}
+
+.img-area:hover:before{
+  transform: translateY(-50%);
+}
+
+.img-area:hover:after{
+  transform: translateY(0);
+}
 
 .bg_heart{
   position:relative;
@@ -162,12 +202,6 @@ html,body{
 
 .container{
   display: inline-block;
-  position:absolute;
-  top:0;
-  left:0;
-  height:100%;
-  width:100%;
-  text-align:center;
   font-family:cursive;
 }
 
