@@ -2,6 +2,9 @@ html,body{
   margin:0px;
   height:100%;
 }
+
+.img
+
 .bg_heart{
   position:relative;
   top:0;
@@ -168,13 +171,21 @@ html,body{
   font-family:cursive;
 }
 
+.type {
+  display: inline-flex;
+}
+
 .type span {
+  word-break: break-all;
+  width: 0%;
+  height: 1.2em;
   overflow: hidden;
-  animation: t 2s linear infinite alternate;
+  animation: t 10s linear infinite alternate;
 }
 
 .type span:before {
   content:'';
+  display: inline-block;
 }
 
 @keyframes t{
