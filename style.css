@@ -24,13 +24,12 @@ html,body{
 }
 
 .img-area:after{
-  padding: 20px;
   display: flex;
   align-items: center;
-  text-align: center;
   color: black;
   font-size: 1rem;
-  background: pink;
+  background-image:url("https://lh3.googleusercontent.com/zyuAZXnztSfDVMUcd6iwHznKh5-igW_OFBt8vo09QhkdDh2hYYxouIh808MYxRMkTlYJbgQZuNC8cNqRMSdAt1N9C2-2ayFfZ5fGA8uWKPUEsY7Cv9q0PBirLVYF1pT-uwmiCzJD3Ns=w1920-h1080");
+  background:pink;
   transform: translateY(-100%);
   content: attr(data-text);
 }
@@ -192,7 +191,7 @@ html,body{
     top: 0px;
   }
   100%{
-    top: 125%;
+    top: 100%;
   }
 }
 /*animation making heart 1&5 fall fast*/
@@ -208,7 +207,7 @@ html,body{
     top: 0px;
   }
   100%{
-    top: 125%;
+    top: 100%;
   }
 }
 /*animation making heart 2&6 fall at medium speed*/
@@ -224,7 +223,7 @@ html,body{
     top: 0px;
   }
   100%{
-    top: 125%;
+    top: 100%;
   }
 }
 
