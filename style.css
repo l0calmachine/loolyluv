@@ -69,3 +69,100 @@ html,body{
   @-ms-keyframes love {
     0%{top:110%}
   }
+  .lilHearts{
+    height:30px;
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    background-color: #fb98be;
+    transform: rotate(-45deg);
+  }
+  .lilHearts::before{
+    content:"";
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    left: 50%;
+    position: absolute;
+    background-color: #fb98be;
+  }
+  .lilHearts::after{
+    content:"";
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    bottom: 50%;
+    position: absolute;
+    background-color: #fb98be;
+  }
+  #lilHeart0{
+    left: 0%;
+  }
+  #lilHeart1{
+    left: 11%;
+  }
+  #lilHeart2{
+    left: 27%;
+  }
+  #lilHeart3{
+    left: 43%;
+  }
+  #lilHeart4{
+    left: 60%;
+  }
+  #lilHeart5{
+    left: 77%;
+  }
+  #lilHeart6{
+    left: 95%;
+    animation-timing-function: ease;
+  
+  }
+  /*animation making heart 0&3 fall slow*/
+  .slow{
+    animation-name: slow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-play-state: ;
+  }
+  @keyframes slow {
+     0%{
+      top: 0px;
+    }
+    100%{
+      top: 100%;
+    }
+  }
+  /*animation making heart 1&5 fall fast*/
+  .fast{
+    animation-name: fast;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-play-state: ;
+  }
+  @keyframes fast{
+    0%{
+      top: 0px;
+    }
+    100%{
+      top: 100%;
+    }
+  }
+  /*animation making heart 2&6 fall at medium speed*/
+  .med{
+    animation-name: med;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-play-state: ;
+  }
+  @keyframes med{
+    0%{
+      top: 0px;
+    }
+    100%{
+      top: 100%;
+    }
+  }
