@@ -14,17 +14,6 @@ html,body{
   z-index:-1;
 }
 
-.container{
-  position:absolute;
-  top:0;
-  left:0;
-  height:100%;
-  width:100%;
-  text-align:center;
-  font-family:cursive;
-}
-
-
 .heart{
   position:absolute;
   top:-50%;
@@ -166,3 +155,34 @@ html,body{
   }
 }
 
+/*typewriter text*/
+
+.container{
+  display: inline-block;
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  text-align:center;
+  font-family:cursive;
+}
+
+h1{
+  overflow: hidden;
+  border-right: .15em black;
+  width: 0;
+  animation:
+    typing 2.5s steps(75, end) forwards,
+    blink .8s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to{ width: 100% }
+}
+
+@keyframes blink {
+  from { border-color: transparent; }
+  to { border-color: black; }
+}
