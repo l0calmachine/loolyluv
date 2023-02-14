@@ -7,14 +7,9 @@ html,body{
 }
 
 .img-area{
-  width: 400px;
-  height: 221px;
-  background-size: cover;
-  background-position: center;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  background-image: url(https://lh3.googleusercontent.com/Q4LUWPuWpBbeH5JIEi3y9kAOP64j7esH4Iv7h0ThlNrIkGxvQA9DlyjtlqRs2rS4pS92d4UvlmxGoaQagkIUZet5bvoBr-C4zqmqti6fO6czo70pYyvrEGMi0lt9u16PS4exYi9Tw9g=w1920-h1080);
 }
 
 .img-area:before,
@@ -52,6 +47,7 @@ html,body{
   width: 400px;
   height: 221px;
   float: right;
+  object-fit: scale-down;
   transition:.3s;
 }
 
@@ -59,13 +55,34 @@ html,body{
   opacity: 0;
 }
 
-.text{
+.emtext{
   text-align: center;
   color: hotpink;
   padding: 30px;
   background-attachment: fixed;
   background-repeat: repeat;
   background: black;
+}
+
+.colin{
+  width: 400px;
+  height: 221px;
+  float: left;
+  object-fit: scale-down;
+  transition:.3s;
+}
+
+.colin:hover{
+  opacity: 0;
+}
+
+.cotext{
+  text-align: center;
+  color: black;
+  padding: 30px;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background: hotpink;
 }
 
 
@@ -175,7 +192,7 @@ html,body{
     top: 0px;
   }
   100%{
-    top: 100%;
+    top: 125%;
   }
 }
 /*animation making heart 1&5 fall fast*/
@@ -191,7 +208,7 @@ html,body{
     top: 0px;
   }
   100%{
-    top: 100%;
+    top: 125%;
   }
 }
 /*animation making heart 2&6 fall at medium speed*/
@@ -207,7 +224,7 @@ html,body{
     top: 0px;
   }
   100%{
-    top: 100%;
+    top: 125%;
   }
 }
 
