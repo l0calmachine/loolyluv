@@ -29,9 +29,8 @@ html,body{
   color: black;
   font-size: 1rem;
   background-image:url("https://lh3.googleusercontent.com/zyuAZXnztSfDVMUcd6iwHznKh5-igW_OFBt8vo09QhkdDh2hYYxouIh808MYxRMkTlYJbgQZuNC8cNqRMSdAt1N9C2-2ayFfZ5fGA8uWKPUEsY7Cv9q0PBirLVYF1pT-uwmiCzJD3Ns=w1920-h1080");
-  background:pink;
+background-size: 25%;
   transform: translateY(-100%);
-  content: attr(data-text);
 }
 
 .img-area:hover:before{
