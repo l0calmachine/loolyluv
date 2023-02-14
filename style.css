@@ -1,6 +1,9 @@
 html,body{
   margin:0px;
   height:100%;
+  background-image:url("https://p1-tt.byteimg.com/origin/tos-cn-i-qvj2lq49k0/7c204a5e79de461d85e22bf0c0d38e6a.jpg");
+  background-size:100% 100%;
+  z-index:-1;
 }
 
 .img-area{
@@ -45,17 +48,7 @@ html,body{
   transform: translateY(0);
 }
 
-.bg_heart{
-  position:relative;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
- overflow:hidden;
-  background-image:url("https://p1-tt.byteimg.com/origin/tos-cn-i-qvj2lq49k0/7c204a5e79de461d85e22bf0c0d38e6a.jpg");
-  background-size:100% 100%;
-  z-index:-1;
-}
+
 
 .heart{
   position:absolute;
@@ -202,7 +195,8 @@ html,body{
 
 .container{
   display: inline-block;
-  font-family:cursive;
+  font-family: cursive;
+  color: hotpink;
 }
 
 .type {
@@ -212,9 +206,9 @@ html,body{
 .type span {
   word-break: break-all;
   width: 0%;
-  height: 1.2em;
+  height: 2em;
   overflow: hidden;
-  animation: t 10s linear infinite alternate;
+  animation: t 8s linear infinite alternate;
 }
 
 .type span:before {
