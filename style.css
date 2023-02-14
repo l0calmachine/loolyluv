@@ -1,212 +1,169 @@
 html,body{
-    margin:0px;
-    height:100%;
-  }
-  .bg_heart{
-    position:relative;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-   overflow:hidden;
-    background-image:url("https://p1-tt.byteimg.com/origin/tos-cn-i-qvj2lq49k0/7c204a5e79de461d85e22bf0c0d38e6a.jpg");
-    background-size:100% 100%;
-    z-index:-1;
-  }
-  
-  .container{
-    position:absolute;
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    text-align:center;
-  }
-  
-
-  @keyframes love {
-    0%{top:110%}
-  }
-  @-webkit-keyframes love {
-    0%{top:110%}
-  }
-  @-moz-keyframes love {
-    0%{top:110%}
-  }
-  @-ms-keyframes love {
-    0%{top:110%}
-  }
-  .lilHearts{
-    height:30px;
-    width: 30px;
-    position: absolute;
-    top: 10px;
-    background-color: #fb98be;
-    transform: rotate(-45deg);
-  }
-  .lilHearts::before{
-    content:"";
-    height:30px;
-    width: 30px;
-    border-radius: 50%;
-    left: 50%;
-    position: absolute;
-    background-color: #fb98be;
-  }
-  .lilHearts::after{
-    content:"";
-    height:30px;
-    width: 30px;
-    border-radius: 50%;
-    bottom: 50%;
-    position: absolute;
-    background-color: #fb98be;
-  }
-  #lilHeart0{
-    left: 0%;
-  }
-  #lilHeart1{
-    left: 11%;
-  }
-  #lilHeart2{
-    left: 27%;
-  }
-  #lilHeart3{
-    left: 43%;
-  }
-  #lilHeart4{
-    left: 60%;
-  }
-  #lilHeart5{
-    left: 77%;
-  }
-  #lilHeart6{
-    left: 95%;
-    animation-timing-function: ease;
-  
-  }
-  /*animation making heart 0&3 fall slow*/
-  .slow{
-    animation-name: slow;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-play-state: ;
-  }
-  @keyframes slow {
-     0%{
-      top: 0px;
-    }
-    100%{
-      top: 100%;
-    }
-  }
-  /*animation making heart 1&5 fall fast*/
-  .fast{
-    animation-name: fast;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-play-state: ;
-  }
-  @keyframes fast{
-    0%{
-      top: 0px;
-    }
-    100%{
-      top: 100%;
-    }
-  }
-  /*animation making heart 2&6 fall at medium speed*/
-  .med{
-    animation-name: med;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
-    animation-play-state: ;
-  }
-  @keyframes med{
-    0%{
-      top: 0px;
-    }
-    100%{
-      top: 100%;
-    }
-  }
-
-  :root {
-  --bg-color: hsl(49 37% 94%);
-  --typewriterSpeed: 5s;
-  --typewriterCharacters: 15;
+  margin:0px;
+  height:100%;
+}
+.bg_heart{
+  position:relative;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+ overflow:hidden;
+  background-image:url("https://p1-tt.byteimg.com/origin/tos-cn-i-qvj2lq49k0/7c204a5e79de461d85e22bf0c0d38e6a.jpg");
+  background-size:100% 100%;
+  z-index:-1;
 }
 
-body {
-  margin: 0;
-  font-family: "Source Sans Pro", sans-serif;
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
-  text-align: center;
-  background: var(--bg-color);
+.container{
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  text-align:center;
+  color:white;
+  font-family:cursive;
 }
 
-h1 {
-  font-size: clamp(1rem, 3vw + 1rem, 4rem);
-  position: relative;
-  font-family: "Source Code Pro", monospace;
-  position: relative;
-  width: max-content;
+
+.heart{
+  position:absolute;
+  top:-50%;
+  transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -m-transform:rotate(-45deg);
+}
+.heart:before{
+  position:absolute;
+  top:-50%;
+  left:0;
+  display:block;
+  content:"";
+  width:100%;
+  height:100%;
+  background:inherit;
+  border-radius:100%;
+}
+.heart:after{
+  position:absolute;
+  top:0;
+  right:-50%;
+  display:block;
+  content:"";
+  width:100%;
+  height:100%;
+  background:inherit;
+  border-radius:100%;
 }
 
-h1::before,
-h1::after {
-  content: "";
+@keyframes love {
+  0%{top:110%}
+}
+@-webkit-keyframes love {
+  0%{top:110%}
+}
+@-moz-keyframes love {
+  0%{top:110%}
+}
+@-ms-keyframes love {
+  0%{top:110%}
+}
+.lilHearts{
+  height:30px;
+  width: 30px;
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  top: 10px;
+  background-color: #fb98be;
+  transform: rotate(-45deg);
 }
-
-h1::before {
-  background: var(--bg-color);
-  animation: typewriter var(--typewriterSpeed)
-    steps(var(--typewriterCharacters)) 1s forwards;
+.lilHearts::before{
+  content:"";
+  height:30px;
+  width: 30px;
+  border-radius: 50%;
+  left: 50%;
+  position: absolute;
+  background-color: #fb98be;
 }
-
-h1::after {
-  width: 0.125em;
-  background: black;
-  animation: typewriter var(--typewriterSpeed)
-      steps(var(--typewriterCharacters)) 1s forwards,
-    blink 750ms steps(var(--typewriterCharacters)) infinite;
+.lilHearts::after{
+  content:"";
+  height:30px;
+  width: 30px;
+  border-radius: 50%;
+  bottom: 50%;
+  position: absolute;
+  background-color: #fb98be;
 }
-
-.subtitle {
-  color: hsl(0 0% 0% / 0.7);
-  font-size: 2rem;
-  font-weight: 400;
-  opacity: 0;
-  transform: translateY(3rem);
-  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 1s) forwards;
+#lilHeart0{
+  left: 0%;
 }
+#lilHeart1{
+  left: 11%;
+}
+#lilHeart2{
+  left: 27%;
+}
+#lilHeart3{
+  left: 43%;
+}
+#lilHeart4{
+  left: 60%;
+}
+#lilHeart5{
+  left: 77%;
+}
+#lilHeart6{
+  left: 95%;
+  animation-timing-function: ease;
 
-@keyframes typewriter {
-  to {
-    left: 100%;
+}
+/*animation making heart 0&3 fall slow*/
+.slow{
+  animation-name: slow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-play-state: ;
+}
+@keyframes slow {
+   0%{
+    top: 0px;
+  }
+  100%{
+    top: 100%;
   }
 }
-
-@keyframes blink {
-  to {
-    background: transparent;
+/*animation making heart 1&5 fall fast*/
+.fast{
+  animation-name: fast;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-play-state: ;
+}
+@keyframes fast{
+  0%{
+    top: 0px;
+  }
+  100%{
+    top: 100%;
   }
 }
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+/*animation making heart 2&6 fall at medium speed*/
+.med{
+  animation-name: med;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-play-state: ;
+}
+@keyframes med{
+  0%{
+    top: 0px;
+  }
+  100%{
+    top: 100%;
   }
 }
 
@@ -224,7 +181,6 @@ body {
   display: grid;
   place-content: center;
   text-align: center;
-  background: var(--bg-color);
 }
 
 h1 {
@@ -246,25 +202,17 @@ h1::after {
 }
 
 h1::before {
-    animation: typewriter var(--typewriterSpeed)
+  animation: typewriter var(--typewriterSpeed)
     steps(var(--typewriterCharacters)) 1s forwards;
 }
 
 h1::after {
   width: 0.125em;
-   animation: typewriter var(--typewriterSpeed)
+  animation: typewriter var(--typewriterSpeed)
       steps(var(--typewriterCharacters)) 1s forwards,
     blink 750ms steps(var(--typewriterCharacters)) infinite;
 }
 
-.subtitle {
-  color: hsl(0 0% 0% / 0.7);
-  font-size: 2rem;
-  font-weight: 400;
-  opacity: 0;
-  transform: translateY(3rem);
-  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 1s) forwards;
-}
 
 @keyframes typewriter {
   to {
