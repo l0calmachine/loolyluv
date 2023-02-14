@@ -48,6 +48,26 @@ html,body{
   transform: translateY(0);
 }
 
+.emma{
+  width: 400px;
+  height: 221px;
+  float: right;
+  transition:.3s;
+}
+
+.emma:hover{
+  opacity: 0;
+}
+
+.text{
+  text-align: center;
+  color: hotpink;
+  padding: 30px;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background: black;
+}
+
 
 
 .heart{
